@@ -22,7 +22,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		if (contador == 0) {
 			r = divisao(numerador, denominador);
-			somar(total, r);
+			total = somar(total, r);
 			contador++;
 			denominador += 2;
 			continue;
@@ -39,9 +39,10 @@ int main() {
 		denominador += 2;
 	}
 
+	total = 4 - total;
 	cout << "O resutado e: " << total << endl;
 	system("pause");
-
+	
 	return 0;
 }
 
